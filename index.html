@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jhon@terminal:~$ portfolio --show</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>jhon@dev:~$</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">./home</a></li>
+                <li><a href="#sobre-mi" class="nav-link">./about</a></li>
+                <li><a href="#habilidades" class="nav-link">./skills</a></li>
+                <li><a href="#proyectos" class="nav-link">./projects</a></li>
+                <li><a href="#contacto" class="nav-link">./contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn red"></span>
+                    <span class="btn yellow"></span>
+                    <span class="btn green"></span>
+                </div>
+                <div class="terminal-title">jhon@dev: ~</div>
+            </div>
+            <div class="terminal-body">
+                <div class="command-line">
+                    <span class="prompt">jhon@dev:~$</span>
+                    <span class="command">whoami</span>
+                </div>
+                <div class="output">
+                    <h1 class="hero-title">Jhon Perales Gomez</h1>
+                    <p class="hero-subtitle">&gt; Backend Developer</p>
+                    <p class="hero-subtitle">&gt; Python & JavaScript Specialist</p>
+                </div>
+                <div class="command-line">
+                    <span class="prompt">jhon@dev:~$</span>
+                    <span class="command typing">ls ./projects</span>
+                    <span class="cursor">_</span>
+                </div>
+                <button class="cta-button" onclick="scrollToSection('proyectos')">Execute Command</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Soy un desarrollador web apasionado con experiencia en crear aplicaciones web modernas y responsivas. Me especializo en tecnologías back-end como Node.js, Express y bases de datos, siempre buscando las mejores prácticas y soluciones innovadoras.</p>
+                    <p>Mi objetivo es crear experiencias digitales que no solo sean visualmente atractivas, sino también funcionales, escalables y accesibles para todos los usuarios. Me encanta resolver problemas complejos y convertir ideas en realidad.</p>
+                    <p>Cuando no estoy programando, disfruto aprendiendo nuevas tecnologías, contribuyendo a proyectos de código abierto y compartiendo conocimiento con la comunidad de desarrolladores.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>8+</h3>
+                            <p>Proyectos Completados</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1+</h3>
+                            <p>Años de Experiencia</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Satisfacción del Cliente</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="profile-image">
+                        <img src="images.png" alt="Jhon Perales Gomez - Desarrollador Web">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2 class="section-title">Mis Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">HTML5</div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="95"></div>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">CSS3</div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="90"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">JS</div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">React</div>
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="80"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">Node</div>
+                    <h3>Node.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">DB</div>
+                    <h3>MongoDB</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="78"></div>
+                    </div>
+                    <span class="skill-percentage">78%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">Git</div>
+                    <h3>Git</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="90"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">API</div>
+                    <h3>REST API</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="82"></div>
+                    </div>
+                    <span class="skill-percentage">82%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proyecto1.png" alt="E-commerce Platform" class="project-img">
+                        <div class="project-overlay">
+                            <button class="project-btn">Ver Proyecto</button>
+                            <button class="project-btn">Ver Código</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>Plataforma de comercio electrónico completa con carrito de compras, pagos integrados y panel de administración avanzado.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proyecto2.png" alt="Dashboard Analytics" class="project-img">
+                        <div class="project-overlay">
+                            <button class="project-btn">Ver Proyecto</button>
+                            <button class="project-btn">Ver Código</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Panel de control con visualización de datos en tiempo real, gráficos interactivos y reportes personalizables para empresas.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>D3.js</span>
+                            <span>Express</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder"></div>
+                        <div class="project-overlay">
+                            <button class="project-btn">Ver Proyecto</button>
+                            <button class="project-btn">Ver Código</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Microservices API</h3>
+                        <p>Arquitectura de microservicios escalable con API Gateway, autenticación JWT y documentación automatizada.</p>
+                        <div class="project-tags">
+                            <span>Node.js</span>
+                            <span>Docker</span>
+                            <span>Redis</span>
+                            <span>Swagger</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proyecto3.png" alt="Task Manager App" class="project-img">
+                        <div class="project-overlay">
+                            <button class="project-btn">Ver Proyecto</button>
+                            <button class="project-btn">Ver Código</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Manager Pro</h3>
+                        <p>Aplicación avanzada de gestión de tareas con colaboración en tiempo real, notificaciones push y sincronización en la nube.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Socket.io</span>
+                            <span>Firebase</span>
+                            <span>PWA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proyecto4.png" alt="Weather & Climate App" class="project-img">
+                        <div class="project-overlay">
+                            <button class="project-btn">Ver Proyecto</button>
+                            <button class="project-btn">Ver Código</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather & Climate App</h3>
+                        <p>Aplicación meteorológica completa con pronósticos extendidos, mapas interactivos, alertas climáticas y análisis histórico.</p>
+                        <div class="project-tags">
+                            <span>OpenWeather API</span>
+                            <span>Mapbox</span>
+                            <span>Chart.js</span>
+                            <span>PWA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder coming-soon">
+                            <div class="coming-soon-text">
+                                <h4>Próximo Proyecto</h4>
+                                <p>En desarrollo...</p>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-btn">Próximamente</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Social Media Dashboard</h3>
+                        <p>Plataforma integral para gestión de múltiples redes sociales con análisis de engagement y programación de contenido.</p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder coming-soon">
+                            <div class="coming-soon-text">
+                                <h4>Proyecto Secreto</h4>
+                                <p>Algo increíble se avecina...</p>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-btn">Pronto</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI-Powered CRM</h3>
+                        <p>Sistema CRM inteligente con IA para automatización de ventas, predicción de comportamiento de clientes y análisis predictivo.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>FastAPI</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¡Hablemos!</h3>
+                    <p>¿Tienes un proyecto en mente? Me encantaría escuchar tus ideas y ayudarte a hacerlas realidad.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>Miportafolio@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>999777888</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Satipo, Peru</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Jhonpg-bit" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">X</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Tu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensaje" name="mensaje" placeholder="Tu Mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Backend Developer. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <button id="scrollTop" class="scroll-top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
